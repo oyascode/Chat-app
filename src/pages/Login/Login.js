@@ -51,7 +51,7 @@ const Login = () => {
           isLoading: false,
         });
         navigate("/")
-    } catch(err) {
+    } catch(err) { 
       setData({  
         ...data,
         error: err.message,

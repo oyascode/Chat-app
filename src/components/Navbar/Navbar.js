@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav className='nav'>
       <h3>
-        <Link to="/">Messanger</Link>
+        <Link to="/">ChatUp</Link>
       </h3>
       <div>
         { user ?
