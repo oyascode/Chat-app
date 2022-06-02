@@ -1,0 +1,90 @@
+
+.message_wrap {
+  margin-top: 0.8em;
+  padding: 0px 5px;
+}
+.message_wrap img {
+  width: 100%;
+  border-radius: 5px;
+}
+.message_wrap p {
+  padding: 0.5em;
+  display: inline-block;
+  max-width: 50%;
+  text-align: left;
+  border-radius: 7px;
+}
+.message_wrap small {
+  display: inline-block;
+  /* margin-top: 0.5em; */
+  opacity: 0.8;
+  font-size: 0.8rem;
+}
+.message_wrap.own {
+  text-align: right;
+}
+
+.me {
+  background: #0c3f87;
+  color: #d6d4d4;
+  position: relative;
+}
+
+.me::before {
+  content: '';
+  position: absolute;
+  visibility: visible;
+  bottom: -6px;
+  right: -10px;
+  border: 10px solid transparent;
+  border-top: 10px solid #0c3f87;
+}
+
+.me::after {
+  content: '';
+  position: absolute;
+  visibility: visible;
+  bottom: -6px;
+  right: -8px;
+  border: 10px solid transparent;
+  border-top: 10px solid #0c3f87;
+  clear: both;
+}
+
+.friend {
+  background: #3b3a3a;
+  position: relative;
+}
+
+.friend::before {
+  content: '';
+  position: absolute;
+  visibility: visible;
+  bottom: 5px;
+  left: -10px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #3b3a3a;
+}
+
+.friend::after {
+  content: '';
+  position: absolute;
+  visibility: visible;
+  bottom: 5px;
+  left: -8px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #3b3a3a;
+  /* clear: both; */
+}
+
+@media screen and (max-width: 767px) {
+  .message_wrap p{
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .message_wrap p{
+    max-width: 100%;
+  }
+}

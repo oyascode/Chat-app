@@ -1,0 +1,47 @@
+.home_wrap {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  overflow: hidden;
+  height: calc(100vh - 70px);
+  width: 100vw;
+}
+.users_wrap {
+  margin-top: 10px;
+  border-right: 2px solid #333;
+  overflow-y: auto;
+}
+.messages_wrap {
+  position: relative;
+  width: 100%;
+  background-image: url('../../assets/image/chat-bg.jpg');
+}
+.messages_user {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #333;
+}
+.messages {
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+  border-bottom: 1px solid #333;
+  padding: 0 0.8em;
+}
+.no_chat {
+  font-size: 20px;
+  color: #808080;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .home_wrap {
+    grid-template-columns: 2fr 3fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home_wrap {
+    grid-template-columns: 1fr 5fr;
+  }
+}
+

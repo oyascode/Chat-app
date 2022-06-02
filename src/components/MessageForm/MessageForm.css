@@ -1,0 +1,40 @@
+.message_form {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.message_form input {
+  width: 40vw;
+  margin: 0px 10px 10px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: rgb(222, 216, 216);
+}
+.message_form .btn {
+  margin-top: -10px;
+}
+
+@media screen and (max-width: 767px) {
+  .message_form {
+    left: 3%;
+    right: 0;
+    bottom: 5px;
+  }
+
+  .message_form .btn {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .message_form input {
+    width: 50vw;
+    margin:  0 10px;
+  }
+}
