@@ -47,6 +47,7 @@ const Profile = () => {
       imgUpload();
 
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [img])
 
   const deleteImage = async () => {
